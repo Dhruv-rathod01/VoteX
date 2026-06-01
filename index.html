@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Election Commission of India</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="logo-section">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg">
+        <div>
+            <h1>Election Commission of India</h1>
+            <p>Secure Online Voting Portal</p>
+        </div>
+    </div>
+
+</header>
+
+<section class="voter-card">
+
+    <h2>Voter Verification</h2>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter Full Name"
+    >
+
+    <input
+        type="tel"
+        id="mobile"
+        maxlength="10"
+        placeholder="Enter Mobile Number"
+    >
+
+</section>
+
+<section class="party-section">
+
+    <h2>Select Your Party</h2>
+
+    <div class="party-grid">
+
+        <div class="party-card"
+             onclick="selectParty('BJP',this)">
+
+            <div class="party-symbol">🌷</div>
+
+            <h3>BJP</h3>
+
+            <p>Bharatiya Janata Party</p>
+
+        </div>
+
+        <div class="party-card"
+             onclick="selectParty('Congress',this)">
+
+            <div class="party-symbol">✋</div>
+
+            <h3>Congress</h3>
+
+            <p>Indian National Congress</p>
+
+        </div>
+
+        <div class="party-card"
+             onclick="selectParty('AAP',this)">
+
+            <div class="party-symbol">🧹</div>
+
+            <h3>AAP</h3>
+
+            <p>Aam Aadmi Party</p>
+
+        </div>
+
+        <div class="party-card"
+             onclick="selectParty('BSP',this)">
+
+            <div class="party-symbol">🐘</div>
+
+            <h3>BSP</h3>
+
+            <p>Bahujan Samaj Party</p>
+
+        </div>
+
+        <div class="party-card"
+             onclick="selectParty('SP',this)">
+
+            <div class="party-symbol">🚲</div>
+
+            <h3>SP</h3>
+
+            <p>Samajwadi Party</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="selected-party-box">
+
+    Selected Party :
+
+    <span id="selectedParty">
+        None
+    </span>
+
+</div>
+
+<input type="hidden" id="party">
+
+<div class="vote-btn-container">
+
+    <button onclick="castVote()">
+
+        🗳 CONFIRM VOTE
+
+    </button>
+
+</div>
+
+<p id="message"></p>
+
+<div class="admin-link">
+
+    <a href="admin.html">
+
+        📊 Open Admin Dashboard
+
+    </a>
+
+</div>
+
+<footer>
+
+    © 2026 Election Commission of India
+
+</footer>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

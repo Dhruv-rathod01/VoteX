@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+/* HEADER */
+
+.top-header{
+    background:linear-gradient(135deg,#003366,#0055aa);
+    color:white;
+    padding:20px;
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.logo-section img{
+    width:70px;
+}
+
+.logo-section h1{
+    font-size:28px;
+}
+
+.logo-section p{
+    opacity:.9;
+}
+
+/* VOTER CARD */
+
+.voter-card{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.voter-card h2{
+    margin-bottom:15px;
+    color:#003366;
+}
+
+.voter-card input{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+/* PARTY SECTION */
+
+.party-section{
+    max-width:1100px;
+    margin:auto;
+}
+
+.party-section h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.party-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.party-card{
+    background:white;
+    border:3px solid transparent;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.party-card:hover{
+    transform:translateY(-8px);
+}
+
+.party-card.selected{
+    border-color:#003366;
+    background:#eaf2ff;
+}
+
+.party-symbol{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.party-card h3{
+    color:#003366;
+    margin-bottom:5px;
+}
+
+/* SELECTED PARTY */
+
+.selected-party-box{
+    max-width:900px;
+    margin:25px auto;
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+#selectedParty{
+    color:#0b7a0b;
+}
+
+/* BUTTON */
+
+.vote-btn-container{
+    text-align:center;
+    margin:30px;
+}
+
+.vote-btn-container button{
+    background:#0b7a0b;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:12px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.vote-btn-container button:hover{
+    background:#086108;
+}
+
+/* MESSAGE */
+
+#message{
+    text-align:center;
+    margin-top:10px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* ADMIN LINK */
+
+.admin-link{
+    text-align:center;
+    margin:30px;
+}
+
+.admin-link a{
+    background:#003366;
+    color:white;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .logo-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo-section h1{
+        font-size:22px;
+    }
+
+}
