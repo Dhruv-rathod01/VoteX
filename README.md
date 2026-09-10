@@ -1,4 +1,4 @@
-# 🗳 Online Voting System
+# 🗳 VoteX
 
 A web-based Online Voting System developed using HTML, CSS, JavaScript, Firebase Firestore, and deployed using Vercel.
 
